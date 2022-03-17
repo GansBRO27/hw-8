@@ -1,0 +1,11 @@
+.footer-contact-list__link {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer-contact-list__items:not(:last-child) {
+  margin-bottom: 9px;
+}
