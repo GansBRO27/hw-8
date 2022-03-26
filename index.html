@@ -201,19 +201,38 @@ activity">
           <ul class="list list-flex work-list">
             <li class="work-list__item">
               <div class="work-list__container">
-                <img src="./images/img.jpg" alt="photo" width="370" />
+                <picture>
+                  <source 
+                  srcset="./images/img.jpg 1x , ./images/work-desk-2x-1.jpg 2x"
+                  media="(min-width:1200px)"  >
+                   
+                <img src="./images/img.jpg" alt="photo"  />
+                <!-- <img src="./images/team-768-x1-1.jpg" alt="photo"  /> -->
+                </picture>
                 <p class="work-list__description">Десктопные приложения</p>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-list__container">
-                <img src="./images/box2.jpg" alt="photo" width="370" />
+                 <picture>
+                  <source 
+                  srcset="./images/box2.jpg 1x , ./images/work-desk-2x-2.jpg 2x"
+                  media="(min-width:1200px)"  >
+                <img src="./images/box2.jpg" alt="photo"  />
+                </picture>
+                
                 <p class="work-list__description">Мобильные приложения</p>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-list__container">
-                <img src="./images/box3.jpg" alt="photo" width="370" />
+                  <picture>
+                  <source 
+                  srcset="./images/box3.jpg 1x , ./images/work-desk-2x-3.jpg 2x"
+                  media="(min-width:1200px)"  >
+                <img src="./images/box3.jpg" alt="photo"  />
+                </picture>
+                
                 <p class="work-list__description">Дизайнерские решения</p>
               </div>
             </li>
@@ -227,12 +246,20 @@ activity">
 
           <ul class="list team-list">
             <li class="team-list__item">
-              <img
-                src="./images/img01.jpg"
-                alt="photo"
-                width="270"
-                class="team-list__image"
-              />
+
+               <picture>
+                  <source 
+                  srcset="./images/team-desk-x1-1.jpg 1x , ./images/team-desk-2x-1.jpg 2x"
+                  media="(min-width:1200px)"  >
+                    <source 
+                  srcset="./images/team-768-x1-1.jpg 1x , ./images/team-768-x2-1.jpg 2x"
+                  media="(min-width:768px)"  >
+                  <source 
+                  srcset="./images/team-480-x1-1.jpg 1x , ./images/team-480-x2-1.jpg 2x"
+                  media="(max-width:767px)"  >
+                <img src="./images/team-desk-x1-1.jpg" alt="photo"  />
+                </picture>
+             
               <div class="team-list__container">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__profession">Product Designer</p>
@@ -270,12 +297,19 @@ activity">
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/img02.jpg"
-                alt="photo"
-                width="270"
-                class="team-list__image"
-              />
+                 <picture>
+                  <source 
+                  srcset="./images/team-desk-x1-2.jpg 1x , ./images/team-desk-2x-2.jpg 2x"
+                  media="(min-width:1200px)"  >
+                    <source 
+                  srcset="./images/team-768-x1-2.jpg 1x , ./images/team-768-x2-2.jpg 2x"
+                  media="(min-width:768px)"  >
+                    <source 
+                  srcset="./images/team-480-x1-2.jpg 1x , ./images/team-480-x2-2.jpg 2x"
+                  media="(max-width:767px)"  >
+                <img src="./images/team-desk-x1-2.jpg" alt="photo"  />
+                </picture>
+             
               <div class="team-list__container">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__profession">Frontend Developer</p>
@@ -313,12 +347,19 @@ activity">
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/img03.jpg"
-                alt="photo"
-                width="270"
-                class="team-img"
-              />
+               <picture>
+                  <source 
+                  srcset="./images/team-desk-x1-3.jpg 1x , ./images/team-desk-2x-3.jpg 2x"
+                  media="(min-width:1200px)"  >
+                    <source 
+                  srcset="./images/team-768-x1-3.jpg 1x , ./images/team-768-x2-3.jpg 2x"
+                  media="(min-width:768px)"  >
+                    <source 
+                  srcset="./images/team-480-x1-3.jpg 1x , ./images/team-480-x2-3.jpg 2x"
+                  media="(max-width:767px)"  >
+                <img src="./images/team-desk-x1-3.jpg" alt="photo"  />
+                </picture>
+             
               <div class="team-list__container">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__profession">Marketing</p>
@@ -356,12 +397,20 @@ activity">
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/img04.jpg"
-                alt="photo"
-                width="270"
-                class="team-img"
-              />
+               <picture>
+                  <source 
+                  srcset="./images/team-desk-x1-4.jpg 1x , ./images/team-desk-2x-4.jpg 2x"
+                  media="(min-width:1200px)"  >
+                  <source 
+                  srcset="./images/team-768-x1-4.jpg 1x , ./images/team-768-x2-4.jpg 2x"
+                  media="(min-width:768px)"  >
+                    <source 
+                  srcset="./images/team-480-x1-4.jpg 1x , ./images/team-480-x2-4.jpg 2x"
+                  media="(max-width:767px)"  >
+                <img src="./images/team-desk-x1-4.jpg" alt="photo"  />
+                </picture>
+             
+             
               <div class="team-list__container">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__profession">UI Designer</p>

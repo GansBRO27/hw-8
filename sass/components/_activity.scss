@@ -1,5 +1,13 @@
+.work-list__item {
+  @media screen and (min-width: 1200px) {
+  }
+}
 .work-list__container {
   position: relative;
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
 }
 .work-list__description {
   position: absolute;

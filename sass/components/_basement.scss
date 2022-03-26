@@ -5,10 +5,24 @@
 }
 
 .basement__flex-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    height: 463px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    height: auto;
+  }
 }
 
 .basement__container {
-  margin-right: 70px;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    position: absolute;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    position: static;
+  }
 }

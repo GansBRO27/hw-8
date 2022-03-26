@@ -14,6 +14,8 @@
 }
 
 .hat__menu-open-btn {
+  position: relative;
+  z-index: 2;
   border: none;
   display: block;
   padding: 0;
@@ -56,10 +58,10 @@
 
 .hat__menu-container {
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
-
+  z-index: 1;
   padding-left: 40px;
   padding-bottom: 48px;
   padding-top: 48px;
@@ -116,6 +118,7 @@
 }
 .menu-social-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .menu-list__item:not(:last-child) {
   margin-bottom: 32px;
@@ -125,4 +128,6 @@
 }
 .menu-social-list__item:not(:last-child) {
   margin-right: 20px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }

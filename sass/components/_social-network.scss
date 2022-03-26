@@ -1,6 +1,6 @@
 .social-network-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .social-network-list__item {
   width: 44px;
@@ -9,8 +9,8 @@
   align-items: center;
   justify-content: center;
   &:not(:last-child) {
-  margin-right: 10px;
-}
+    margin-right: 10px;
+  }
 }
 .social-network-list__link {
   width: 100%;
@@ -29,5 +29,3 @@
     fill: var(--white-color);
   }
 }
-
-

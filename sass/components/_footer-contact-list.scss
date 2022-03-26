@@ -5,7 +5,18 @@
   text-decoration: none;
   font-style: normal;
 }
-
-.footer-contact-list__items:not(:last-child) {
+.footer-contact-list__item {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+.footer-contact-list__item:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-contact-list {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
