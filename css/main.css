@@ -117,6 +117,10 @@ a {
   }
 }
 
+.hat__menu-open-btn.is-open {
+  position: relative;
+}
+
 .hat__menu-open-btn {
   position: relative;
   right: 15px;

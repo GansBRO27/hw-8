@@ -11,7 +11,9 @@
     display: flex;
   }
 }
-
+.hat__menu-open-btn.is-open {
+  position: relative;
+}
 .hat__menu-open-btn {
   position: relative;
   right: 15px;
@@ -81,8 +83,6 @@
   }
 }
 
-.menu-list {
-}
 .menu-list__link {
   font-weight: 500;
   font-size: 40px;
