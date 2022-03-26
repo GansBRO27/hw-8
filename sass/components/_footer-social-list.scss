@@ -1,12 +1,8 @@
 .fotter-list-container {
   @media screen and (min-width: 768px) {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 15px;
   }
   @media screen and (min-width: 1200px) {
-    position: static;
+    margin-right: 95px;
   }
 }
 .fotter-list-container__title {

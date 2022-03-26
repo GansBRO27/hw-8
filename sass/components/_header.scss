@@ -3,7 +3,6 @@
 }
 .hat__container {
   display: flex;
-
   position: relative;
 }
 
@@ -15,6 +14,7 @@
 
 .hat__menu-open-btn {
   position: relative;
+  right: 15px;
   z-index: 2;
   border: none;
   display: block;
@@ -57,10 +57,11 @@
 }
 
 .hat__menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
   padding-left: 40px;
   padding-bottom: 48px;
@@ -74,11 +75,13 @@
 @media screen and (max-width: 767px) {
   &.is-open {
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
 .menu-list {
-  margin-bottom: 306px;
 }
 .menu-list__link {
   font-weight: 500;

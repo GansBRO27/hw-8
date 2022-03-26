@@ -119,6 +119,7 @@ a {
 
 .hat__menu-open-btn {
   position: relative;
+  right: 15px;
   z-index: 2;
   border: none;
   display: block;
@@ -167,10 +168,11 @@ a {
 }
 
 .hat__menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
   padding-left: 40px;
   padding-bottom: 48px;
@@ -183,11 +185,10 @@ a {
 @media screen and (max-width: 767px) {
   .is-open {
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-}
-
-.menu-list {
-  margin-bottom: 306px;
 }
 
 .menu-list__link {
@@ -500,13 +501,19 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .skill-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .skill-list__item {
   max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .skill-list__item {
-    max-width: calc(100% / 2 - 30px);
+    max-width: calc((100% - 30px) / 2);
   }
 }
 
@@ -518,7 +525,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .skill-list__item {
-    max-width: 270px;
+    width: 270px;
   }
   .skill-list__item:not(:last-child) {
     margin-right: 30px;
@@ -821,8 +828,10 @@ a {
 
 @media screen and (min-width: 768px) {
   .basement__flex-container {
-    position: relative;
     height: 463px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -837,7 +846,6 @@ a {
 @media screen and (min-width: 768px) {
   .basement__container {
     display: inline-block;
-    position: absolute;
   }
 }
 
@@ -922,18 +930,9 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .fotter-list-container {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 15px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .fotter-list-container {
-    position: static;
+    margin-right: 95px;
   }
 }
 
@@ -1002,7 +1001,6 @@ a {
 
 @media screen and (min-width: 1200px) {
   .footer-form-container {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
   }
@@ -1016,22 +1014,6 @@ a {
   .footer-form {
     display: flex;
     text-align: start;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .input-container {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .input-container {
-    position: static;
-    transform: translateX(0);
   }
 }
 

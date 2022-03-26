@@ -6,8 +6,10 @@
 
 .basement__flex-container {
   @media screen and (min-width: 768px) {
-    position: relative;
     height: 463px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -19,7 +21,6 @@
 .basement__container {
   @media screen and (min-width: 768px) {
     display: inline-block;
-    position: absolute;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
