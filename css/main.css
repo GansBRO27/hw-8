@@ -852,6 +852,7 @@ a {
 @media screen and (min-width: 768px) {
   .basement__container {
     display: inline-block;
+    margin-bottom: 60px;
   }
 }
 
@@ -859,6 +860,7 @@ a {
   .basement__container {
     margin-right: 70px;
     position: static;
+    margin-bottom: 0;
   }
 }
 
@@ -924,10 +926,6 @@ a {
 
 .footer-contact-list__item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-contact-list {
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
