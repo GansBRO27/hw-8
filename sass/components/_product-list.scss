@@ -13,7 +13,6 @@
   }
 }
 .product-list__items {
-  max-width: 100%;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% / 2) - 30px);
     margin-top: 30px;
