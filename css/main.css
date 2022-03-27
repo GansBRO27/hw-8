@@ -1133,6 +1133,7 @@ a {
   overflow-y: scroll;
   opacity: 1;
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 100%;
@@ -1167,9 +1168,10 @@ a {
 
 .modal {
   position: absolute;
-  top: 93px;
-  left: 15px;
-  width: calc(100% - 30px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 450px;
   height: 609px;
   padding: 40px;
   background: var(--white-color);
@@ -1180,10 +1182,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .modal {
-    position: absolute;
-    top: 93px;
-    left: 15px;
-    transform: scale(1);
+    transform: translate(-50%) scale(1);
+    top: 50%;
   }
 }
 
