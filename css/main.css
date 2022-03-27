@@ -1168,9 +1168,9 @@ a {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   width: 450px;
   height: 609px;
   padding: 40px;
@@ -1182,7 +1182,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .modal {
-    top: 50%;
+    top: 208px;
   }
 }
 
