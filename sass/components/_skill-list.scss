@@ -2,10 +2,14 @@
   .skill-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .skill-list {
+    margin-top: 0;
+    margin-left: 0;
     flex-wrap: nowrap;
   }
 }
@@ -16,18 +20,18 @@
 }
 
 .skill-list__item {
-  max-width: 100%;
+  width: 100%;
   @media screen and (min-width: 768px) {
-    max-width: calc((100% - 30px) / 2);
+    width: calc((100% / 2) - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
-@media screen and (min-width: 768px) {
-  .skill-list__item:nth-child(2n + 1) {
-    margin-right: 30px;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   .skill-list__item {
+    margin-top: 0;
+    margin-left: 0;
     width: 270px;
     &:not(:last-child) {
       margin-right: 30px;
